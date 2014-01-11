@@ -16,6 +16,11 @@ CYRTextView is a UITextView subclass that implements a variety of features that 
 Long term, I would like to turn CYRTextView into a full fledged code editor component with code folding, markers, annotation, and more.
 
 
+Screenshot
+--------------
+<img src="https://raw.github.com/illyabusigin/CYRTextView/master/Screenshots/1.png">
+
+
 Requirements
 -----------------------------
 

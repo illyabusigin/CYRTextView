@@ -49,3 +49,14 @@ Bugs & Feature Requests
 There is **no support** offered with this component. If you would like a feature or find a bug, please submit a feature request through the [GitHub issue tracker](http://github.com/illyabusigin/CYRTextView/issues).
 
 Pull-requests for bug-fixes and features are welcome!
+
+Attribution
+--------------
+
+CYRTextView uses portions of code from the following sources.
+
+| Component     | Description   | License  |
+| ------------- |:-------------:| -----:|
+| [NLTextView](https://github.com/srijs/NLTextView)      | A UITextView with Syntax Highlighting and Pan-Gesture Navigation / Selection | [MIT](https://github.com/srijs/NLTextView/blob/master/NLTextView/NLTextView.h) |
+| [TextKit_LineNumbers](https://github.com/alldritt/TextKit_LineNumbers)      | iOS7 Text Kit - Text View with Line Numbers      |   [MIT](https://github.com/alldritt/TextKit_LineNumbers) |
+

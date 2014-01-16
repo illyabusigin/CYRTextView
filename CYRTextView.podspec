@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         =  'CYRTextView'
   s.version      =  '0.2.0'
-  s.license      =  'MIT'
-  s.summary      =  'A rich text view that easy syntax highlighting through regular expressions, line numbers, and more.'
+  s.license      =  { :type => 'MIT', :file => 'LICENSE' }
+  s.summary      =  'A rich text view that allows easy syntax highlighting through regular expressions, line numbers, and more.'
   s.author       =  { 'Illya Busigin' => 'http://illyabusigin.com/' }
   s.source       =  { :git => 'https://github.com/illyabusigin/CYRTextView.git', :tag => '0.2.0' }
   s.homepage     =  'https://github.com/illyabusigin/CYRTextView'

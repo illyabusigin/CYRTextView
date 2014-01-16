@@ -46,6 +46,8 @@ static const float kCursorVelocity = 1.0f/8.0f;
 @property (nonatomic, strong) CYRLayoutManager *lineNumberLayoutManager;
 @property (nonatomic, strong) CYRTextStorage *syntaxTextStorage;
 @property (nonatomic, assign) NSRange lastSelectedRange;
+@property (nonatomic, assign) CGRect lastLineRect;
+@property (nonatomic, strong) NSMutableDictionary *cache;
 
 @end
 
@@ -90,6 +92,7 @@ static const float kCursorVelocity = 1.0f/8.0f;
     // Setup observers
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(font)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(selectedTextRange)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
+    [self.layer addObserver:self forKeyPath:NSStringFromSelector(@selector(animationKeys)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleTextViewDidChangeNotification:) name:UITextViewTextDidChangeNotification object:self];
     
@@ -98,6 +101,8 @@ static const float kCursorVelocity = 1.0f/8.0f;
     self.autocapitalizationType = UITextAutocapitalizationTypeNone;
     self.lastSelectedRange = NSMakeRange(0, 0);
     self.lineCursorEnabled = YES;
+    self.lastLineRect = CGRectZero;
+    self.cache = @{}.mutableCopy;
     
     // Inset the content to make room for line numbers
     self.textContainerInset = UIEdgeInsetsMake(8, self.lineNumberLayoutManager.gutterWidth, 8, 0);
@@ -134,6 +139,10 @@ static const float kCursorVelocity = 1.0f/8.0f;
     {
         self.lastSelectedRange = self.selectedRange;
         [self setNeedsDisplay];
+    }
+    else if ([keyPath isEqualToString:NSStringFromSelector(@selector(animationKeys))] && context == CYRTextViewContext)
+    {
+        NSLog(@"Animation keys yo!");
     }
     else
     {
@@ -199,7 +208,20 @@ static const float kCursorVelocity = 1.0f/8.0f;
     if (_lineCursorEnabled)
     {
         // Show the selected line
-        CGRect paragraphRect = [self.lineNumberLayoutManager paragraphRectForRange:self.lastSelectedRange];
+        CGRect paragraphRect = CGRectZero;
+        
+        if (self.cache[NSStringFromRange(self.lastSelectedRange)] != nil)
+        {
+            NSLog(@"Using cached rect..");
+            paragraphRect = [self.cache[NSStringFromRange(self.lastSelectedRange)] CGRectValue];
+        }
+        else
+        {
+            paragraphRect = [self.lineNumberLayoutManager paragraphRectForRange:self.lastSelectedRange];
+            [self.cache removeAllObjects];
+            [self.cache setObject:[NSValue valueWithCGRect:paragraphRect] forKey:NSStringFromRange(self.lastSelectedRange)];
+        }
+        
         CGContextSetFillColorWithColor(context, [UIColor colorWithWhite:0.9 alpha:1].CGColor);
         CGContextFillRect(context, CGRectMake(bounds.origin.x, paragraphRect.origin.y, self.lineNumberLayoutManager.gutterWidth, paragraphRect.size.height));
         

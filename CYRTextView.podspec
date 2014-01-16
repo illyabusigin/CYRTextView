@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      =  '0.2.0'
   s.license      =  'MIT'
   s.summary      =  'A rich text view that easy syntax highlighting through regular expressions, line numbers, and more.'
-  s.author       =  { 'Illya Busigin' => 'http://charcoaldesign.co.uk/' }
+  s.author       =  { 'Illya Busigin' => 'http://illyabusigin.com/' }
   s.source       =  { :git => 'https://github.com/illyabusigin/CYRTextView.git', :tag => '0.2.0' }
   s.homepage     =  'https://github.com/illyabusigin/CYRTextView'
   s.platform     =  :ios

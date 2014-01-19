@@ -178,6 +178,12 @@ static const float kCursorVelocity = 1.0f/8.0f;
     return syntaxTextStorage.tokens;
 }
 
+- (void)setText:(NSString *)text
+{
+    UITextRange *textRange = [self textRangeFromPosition:self.beginningOfDocument toPosition:self.endOfDocument];
+    [self replaceRange:textRange withText:text];
+}
+
 
 #pragma mark - Line Drawing
 

@@ -41,6 +41,7 @@
 @property (nonatomic, strong) UIColor *lineNumberColor;
 
 @property (nonatomic, readonly) CGFloat gutterWidth;
+@property (nonatomic, assign) NSRange selectedRange;
 
 - (CGRect)paragraphRectForRange:(NSRange)range;
 

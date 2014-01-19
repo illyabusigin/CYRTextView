@@ -1,6 +1,3 @@
-#CYRTextView
-===========
-
 #CYRTextView Changelog
 
 ##0.3.0 (Sunday, January 19th, 2014)

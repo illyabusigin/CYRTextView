@@ -97,6 +97,7 @@ static const float kCursorVelocity = 1.0f/8.0f;
     // Setup defaults
     self.font = [UIFont systemFontOfSize:16.0f];
     self.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    self.autocorrectionType     = UITextAutocorrectionTypeNo;
     self.lineCursorEnabled = YES;
     
     // Inset the content to make room for line numbers

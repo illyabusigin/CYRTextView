@@ -98,6 +98,8 @@ static const float kCursorVelocity = 1.0f/8.0f;
     self.font = [UIFont systemFontOfSize:16.0f];
     self.autocapitalizationType = UITextAutocapitalizationTypeNone;
     self.lineCursorEnabled = YES;
+    self.gutterBackgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
+    self.gutterLineColor       = [UIColor lightGrayColor];
     
     // Inset the content to make room for line numbers
     self.textContainerInset = UIEdgeInsetsMake(8, self.lineNumberLayoutManager.gutterWidth, 8, 0);
@@ -199,11 +201,11 @@ static const float kCursorVelocity = 1.0f/8.0f;
     CGFloat height = MAX(CGRectGetHeight(bounds), self.contentSize.height) + 200;
     
     // Set the regular fill
-    CGContextSetFillColorWithColor(context, [UIColor colorWithWhite:0.95 alpha:1].CGColor);
+    CGContextSetFillColorWithColor(context, self.gutterBackgroundColor.CGColor);
     CGContextFillRect(context, CGRectMake(bounds.origin.x, bounds.origin.y, self.lineNumberLayoutManager.gutterWidth, height));
     
     // Draw line
-    CGContextSetFillColorWithColor(context, [UIColor lightGrayColor].CGColor);
+    CGContextSetFillColorWithColor(context, self.gutterLineColor.CGColor);
     CGContextFillRect(context, CGRectMake(self.lineNumberLayoutManager.gutterWidth, bounds.origin.y, 0.5, height));
     
     if (_lineCursorEnabled)

@@ -5,6 +5,8 @@
 //
 //  Created by Illya Busigin on 01/05/2014.
 //  Copyright (c) 2014 Cyrillian, Inc.
+//  Copyright (c) 2013 Dominik Hauser
+//  Copyright (c) 2013 Sam Rijs
 //
 //  Distributed under MIT license.
 //  Get the latest version from here:

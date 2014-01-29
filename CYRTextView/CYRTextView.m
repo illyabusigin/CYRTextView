@@ -91,6 +91,7 @@ static const float kCursorVelocity = 1.0f/8.0f;
     // Setup observers
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(font)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(selectedTextRange)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
+    [self addObserver:self forKeyPath:NSStringFromSelector(@selector(selectedRange)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleTextViewDidChangeNotification:) name:UITextViewTextDidChangeNotification object:self];
     
@@ -122,6 +123,7 @@ static const float kCursorVelocity = 1.0f/8.0f;
 {
     [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(font))];
     [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(selectedTextRange))];
+    [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(selectedRange))];
 }
 
 
@@ -134,7 +136,8 @@ static const float kCursorVelocity = 1.0f/8.0f;
         // Whenever the UITextView font is changed we want to keep a reference in the stickyFont ivar. We do this to counteract a bug where the underlying font can be changed without notice and cause undesired behaviour.
         self.syntaxTextStorage.defaultFont = self.font;
     }
-    else if ([keyPath isEqualToString:NSStringFromSelector(@selector(selectedTextRange))] && context == CYRTextViewContext)
+    else if (([keyPath isEqualToString:NSStringFromSelector(@selector(selectedTextRange))] ||
+              [keyPath isEqualToString:NSStringFromSelector(@selector(selectedRange))]) && context == CYRTextViewContext)
     {
         [self setNeedsDisplay];
     }

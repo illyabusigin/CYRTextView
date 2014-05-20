@@ -51,6 +51,7 @@
     if (self = [super init])
     {
         _defaultFont = [UIFont systemFontOfSize:12.0f];
+        _defaultTextColor = [UIColor blackColor];
         _attributedString = [NSMutableAttributedString new];
         
         _tokens = @[];
@@ -119,10 +120,14 @@
 
 
 -(void)update
-{    
-    [self addAttributes:@{NSFontAttributeName : self.defaultFont} range:NSMakeRange(0, self.length)];
-    
-    [self applyStylesToRange:NSMakeRange(0, self.length)];
+{
+    NSRange range = NSMakeRange(0, self.length);
+
+    [self addAttributes:@{NSFontAttributeName : self.defaultFont} range:range];
+
+    [self addAttributes:@{NSForegroundColorAttributeName : self.defaultTextColor} range:range];
+
+    [self applyStylesToRange:range];
 }
 
 - (void)applyStylesToRange:(NSRange)searchRange
@@ -133,11 +138,11 @@
     }
     
     NSRange paragaphRange = [self.string paragraphRangeForRange: self.editedRange];
-    
+
     // Reset the text attributes
-    [self setAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]} range:paragaphRange];
-    
     [self setAttributes:@{NSFontAttributeName : self.defaultFont} range:paragaphRange];
+
+    [self setAttributes:@{NSForegroundColorAttributeName : self.defaultTextColor} range:paragaphRange];
     
     for (CYRToken *attribute in self.tokens)
     {

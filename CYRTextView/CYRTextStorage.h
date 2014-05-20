@@ -38,6 +38,7 @@
 
 @property (nonatomic, strong) NSArray *tokens;
 @property (nonatomic, strong) UIFont *defaultFont;
+@property (nonatomic, strong) UIColor *defaultTextColor;
 
 - (void)update;
 

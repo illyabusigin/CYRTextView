@@ -34,7 +34,7 @@
     QEDTextView *textView = [[QEDTextView alloc] initWithFrame:self.view.bounds];
     textView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     textView.delegate = self;
-    
+
     self.textView = textView;
     
     [self.view addSubview:textView];

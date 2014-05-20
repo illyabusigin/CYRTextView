@@ -35,6 +35,7 @@
     _italicFont = [UIFont fontWithName:@"HelveticaNeue-Oblique" size:14.0f];
     
     self.font = _defaultFont;
+    self.textColor = [UIColor blackColor];
     
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(defaultFont)) options:NSKeyValueObservingOptionNew context:0];
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(boldFont)) options:NSKeyValueObservingOptionNew context:0];

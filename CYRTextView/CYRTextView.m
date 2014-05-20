@@ -90,6 +90,7 @@ static const float kCursorVelocity = 1.0f/8.0f;
 {
     // Setup observers
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(font)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
+    [self addObserver:self forKeyPath:NSStringFromSelector(@selector(textColor)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(selectedTextRange)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
     [self addObserver:self forKeyPath:NSStringFromSelector(@selector(selectedRange)) options:NSKeyValueObservingOptionNew context:CYRTextViewContext];
 
@@ -97,6 +98,7 @@ static const float kCursorVelocity = 1.0f/8.0f;
     
     // Setup defaults
     self.font = [UIFont systemFontOfSize:16.0f];
+    self.textColor = [UIColor blackColor];
     self.autocapitalizationType = UITextAutocapitalizationTypeNone;
     self.autocorrectionType     = UITextAutocorrectionTypeNo;
     self.lineCursorEnabled = YES;
@@ -122,6 +124,7 @@ static const float kCursorVelocity = 1.0f/8.0f;
 - (void)dealloc
 {
     [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(font))];
+    [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(textColor))];
     [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(selectedTextRange))];
     [self removeObserver:self forKeyPath:NSStringFromSelector(@selector(selectedRange))];
 }
@@ -135,6 +138,10 @@ static const float kCursorVelocity = 1.0f/8.0f;
     {
         // Whenever the UITextView font is changed we want to keep a reference in the stickyFont ivar. We do this to counteract a bug where the underlying font can be changed without notice and cause undesired behaviour.
         self.syntaxTextStorage.defaultFont = self.font;
+    }
+    else if ([keyPath isEqualToString:NSStringFromSelector(@selector(textColor))] && context == CYRTextViewContext)
+    {
+        self.syntaxTextStorage.defaultTextColor = self.textColor;
     }
     else if (([keyPath isEqualToString:NSStringFromSelector(@selector(selectedTextRange))] ||
               [keyPath isEqualToString:NSStringFromSelector(@selector(selectedRange))]) && context == CYRTextViewContext)

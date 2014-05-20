@@ -39,6 +39,7 @@
 
 @property (nonatomic, strong) UIFont *lineNumberFont;
 @property (nonatomic, strong) UIColor *lineNumberColor;
+@property (nonatomic, strong) UIColor *selectedLineNumberColor;
 
 @property (nonatomic, readonly) CGFloat gutterWidth;
 @property (nonatomic, assign) NSRange selectedRange;

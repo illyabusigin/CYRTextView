@@ -83,6 +83,7 @@ static CGFloat kMinimumGutterWidth = 30.f;
     self.lineAreaInset = UIEdgeInsetsMake(0, 10, 0, 4);
     self.lineNumberColor = [UIColor grayColor];
     self.lineNumberFont = [UIFont systemFontOfSize:10.0f];
+    self.selectedLineNumberColor = [UIColor colorWithWhite:0.9 alpha:1];
 }
 
 
@@ -204,7 +205,7 @@ static CGFloat kMinimumGutterWidth = 30.f;
                                            CGContextRef context = UIGraphicsGetCurrentContext();
                                            CGRect cursorRect = CGRectMake(0, usedRect.origin.y + 8, _gutterWidth, usedRect.size.height);
                                            
-                                           CGContextSetFillColorWithColor(context, [UIColor colorWithWhite:0.9 alpha:1].CGColor);
+                                           CGContextSetFillColorWithColor(context, _selectedLineNumberColor.CGColor);
                                            CGContextFillRect(context, cursorRect);
                                        }
                                        

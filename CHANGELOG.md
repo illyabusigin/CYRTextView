@@ -1,5 +1,10 @@
 #CYRTextView Changelog
 
+##0.4.0 (Sunday, May 25th, 2014)
+ * Made selected line color a property (Marshall Huss)
+ * Added defaultTextColor a property on the CYRTextStorage (Marshall Huss)
+ * Fixed bug whens setting text attributes (Marshall Huss)
+
 ##0.3.5 (Monday, February 17th, 2014)
  * Remove selectedRange KVO on dealloc. (Sam Rijs)
  * Update gutter line cursor on selectedRange change. (Sam Rijs)

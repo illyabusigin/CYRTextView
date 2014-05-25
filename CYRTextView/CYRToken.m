@@ -1,7 +1,7 @@
 //
 //  CYRTextAttribute.m
 //
-//  Version 0.2.0
+//  Version 0.4.0
 //
 //  Created by Illya Busigin on 01/05/2014.
 //  Copyright (c) 2014 Cyrillian, Inc.

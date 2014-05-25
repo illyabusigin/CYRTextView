@@ -34,7 +34,7 @@ To use CYRTextView, just drag the class files into your project and add the Core
 
 If you are using Interface Builder, to set the custom properties of CYRTextView (ones that are not supported by regular UIViews) either create an IBOutlet for your view and set the properties in code, or use the User Defined Runtime Attributes feature in Interface Builder (introduced in Xcode 4.2 for iOS 5+).
 
-**NOTE**: The current version (0.3.5) is alpha quality at best. Use at your own risk!
+**NOTE**: The current version (0.4.0) is alpha quality at best. Use at your own risk!
 
 
 Example

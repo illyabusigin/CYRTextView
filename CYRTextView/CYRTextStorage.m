@@ -123,9 +123,12 @@
 {
     NSRange range = NSMakeRange(0, self.length);
 
-    [self addAttributes:@{NSFontAttributeName : self.defaultFont} range:range];
-
-    [self addAttributes:@{NSForegroundColorAttributeName : self.defaultTextColor} range:range];
+    NSDictionary *attributes =
+    @{
+      NSFontAttributeName : self.defaultFont,
+      NSForegroundColorAttributeName : self.defaultTextColor
+     };
+    [self addAttributes:attributes range:range];
 
     [self applyStylesToRange:range];
 }
@@ -140,9 +143,12 @@
     NSRange paragaphRange = [self.string paragraphRangeForRange: self.editedRange];
 
     // Reset the text attributes
-    [self setAttributes:@{NSFontAttributeName : self.defaultFont} range:paragaphRange];
-
-    [self setAttributes:@{NSForegroundColorAttributeName : self.defaultTextColor} range:paragaphRange];
+    NSDictionary *attributes =
+    @{
+      NSFontAttributeName : self.defaultFont,
+      NSForegroundColorAttributeName : self.defaultTextColor
+     };
+    [self setAttributes:attributes range:paragaphRange];
     
     for (CYRToken *attribute in self.tokens)
     {

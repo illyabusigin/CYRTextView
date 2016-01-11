@@ -36,7 +36,7 @@
 
 @implementation CYRToken
 
-+ (instancetype)tokenWithName:(NSString *)name expression:(NSString *)expression attributes:(NSDictionary *)attributes
++ (instancetype)tokenWithName:(NSString *)name expression:(NSString *)expression attributes:(NSDictionary <NSString *, id> *)attributes
 {
     CYRToken *textAttribute = [CYRToken new];
     

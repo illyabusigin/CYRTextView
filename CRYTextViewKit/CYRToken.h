@@ -36,10 +36,10 @@
 
 @interface CYRToken : NSObject
 
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *expression;
-@property (nonatomic, strong) NSDictionary *attributes;
+@property (nonatomic, strong, nullable) NSString *name;
+@property (nonatomic, strong, nullable) NSString *expression;
+@property (nonatomic, strong, nullable) NSDictionary <NSString *, id> *attributes;
 
-+ (instancetype)tokenWithName:(NSString *)name expression:(NSString *)expression attributes:(NSDictionary *)attributes;
++ (nonnull instancetype)tokenWithName:(nullable NSString *)name expression:(nullable NSString *)expression attributes:(nullable NSDictionary <NSString *, id> *)attributes;
 
 @end

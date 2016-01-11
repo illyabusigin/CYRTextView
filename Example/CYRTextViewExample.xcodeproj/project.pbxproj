@@ -27,9 +27,9 @@
 		DA0C0E7E1C44214F001EA3FA /* CYRTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C0E7D1C44214F001EA3FA /* CYRTextViewTests.swift */; };
 		DA0C0E821C44214F001EA3FA /* CYRTextViewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C0E6D1C44214F001EA3FA /* CYRTextViewKit.framework */; };
 		DA0C0E831C44214F001EA3FA /* CYRTextViewKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA0C0E6D1C44214F001EA3FA /* CYRTextViewKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA0C0E8B1C44215D001EA3FA /* CYRLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 39395411187A6AFE00A19DEC /* CYRLayoutManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA0C0E8B1C44215D001EA3FA /* CYRLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 39395411187A6AFE00A19DEC /* CYRLayoutManager.h */; };
 		DA0C0E8C1C44215D001EA3FA /* CYRLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39395412187A6AFE00A19DEC /* CYRLayoutManager.m */; };
-		DA0C0E8D1C44215D001EA3FA /* CYRTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 39395413187A6AFE00A19DEC /* CYRTextStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA0C0E8D1C44215D001EA3FA /* CYRTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 39395413187A6AFE00A19DEC /* CYRTextStorage.h */; };
 		DA0C0E8E1C44215D001EA3FA /* CYRTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39395414187A6AFE00A19DEC /* CYRTextStorage.m */; };
 		DA0C0E8F1C44215D001EA3FA /* CYRTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 39395415187A6AFE00A19DEC /* CYRTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA0C0E901C44215D001EA3FA /* CYRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39395416187A6AFE00A19DEC /* CYRTextView.m */; };

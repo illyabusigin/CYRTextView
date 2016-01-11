@@ -38,9 +38,11 @@
 #import <UIKit/UIKit.h>
 #import "CYRToken.h"
 
+@class CYRToken;
+
 @interface CYRTextView : UITextView
 
-@property (nonatomic, strong) NSArray *tokens;
+@property (nonatomic, strong) NSArray <CYRToken *> *tokens;
 @property (nonatomic, strong) UIPanGestureRecognizer *singleFingerPanRecognizer;
 @property (nonatomic, strong) UIPanGestureRecognizer *doubleFingerPanRecognizer;
 

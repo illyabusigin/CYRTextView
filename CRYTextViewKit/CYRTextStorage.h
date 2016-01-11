@@ -34,9 +34,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class CYRToken;
+
 @interface CYRTextStorage : NSTextStorage
 
-@property (nonatomic, strong) NSArray *tokens;
+@property (nonatomic, strong) NSArray <CYRToken *> *tokens;
 @property (nonatomic, strong) UIFont *defaultFont;
 @property (nonatomic, strong) UIColor *defaultTextColor;
 

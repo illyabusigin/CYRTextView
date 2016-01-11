@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CYRTextView
+@testable import CYRTextViewKit
 
 class CYRTextViewTests: XCTestCase {
     

@@ -35,6 +35,7 @@
 		DA0C0E901C44215D001EA3FA /* CYRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39395416187A6AFE00A19DEC /* CYRTextView.m */; };
 		DA0C0E911C44215D001EA3FA /* CYRToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 39395417187A6AFE00A19DEC /* CYRToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA0C0E921C44215D001EA3FA /* CYRToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 39395418187A6AFE00A19DEC /* CYRToken.m */; };
+		DA0C0E941C4437B9001EA3FA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0C0E931C4437B9001EA3FA /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		DA0C0E761C44214F001EA3FA /* CYRTextViewKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYRTextViewKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0C0E7D1C44214F001EA3FA /* CYRTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CYRTextViewTests.swift; path = ../CYRTextViewKitTests/CYRTextViewTests.swift; sourceTree = "<group>"; };
 		DA0C0E7F1C44214F001EA3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../CYRTextViewKitTests/Info.plist; sourceTree = "<group>"; };
+		DA0C0E931C4437B9001EA3FA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +166,6 @@
 		393953CA187A18F300A19DEC = {
 			isa = PBXGroup;
 			children = (
-				39395410187A6AFE00A19DEC /* CYRTextView */,
 				393953DC187A18F300A19DEC /* CYRTextViewExample */,
 				393953FE187A18F300A19DEC /* CYRTextViewExampleTests */,
 				DA0C0E6E1C44214F001EA3FA /* CYRTextViewKit */,
@@ -206,6 +207,7 @@
 				393953E6187A18F300A19DEC /* AppDelegate.m */,
 				393953EE187A18F300A19DEC /* ViewController.h */,
 				393953EF187A18F300A19DEC /* ViewController.m */,
+				DA0C0E931C4437B9001EA3FA /* Launch Screen.storyboard */,
 				393953F1187A18F300A19DEC /* Images.xcassets */,
 				393953DD187A18F300A19DEC /* Supporting Files */,
 			);
@@ -239,14 +241,6 @@
 				39395401187A18F300A19DEC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		39395410187A6AFE00A19DEC /* CYRTextView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = CYRTextView;
-			path = ../CYRTextView;
 			sourceTree = "<group>";
 		};
 		DA0C0E6E1C44214F001EA3FA /* CYRTextViewKit */ = {
@@ -417,6 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0C0E941C4437B9001EA3FA /* Launch Screen.storyboard in Resources */,
 				393953F2187A18F300A19DEC /* Images.xcassets in Resources */,
 				393953E1187A18F300A19DEC /* InfoPlist.strings in Resources */,
 			);
@@ -739,7 +734,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = CYRTextViewTests/Info.plist;
+				INFOPLIST_FILE = CYRTextViewKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -759,7 +754,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = CYRTextViewTests/Info.plist;
+				INFOPLIST_FILE = CYRTextViewKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;

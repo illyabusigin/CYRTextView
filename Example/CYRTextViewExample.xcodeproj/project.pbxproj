@@ -102,22 +102,22 @@
 		39395402187A18F300A19DEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39395404187A18F300A19DEC /* CYRTextViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYRTextViewExampleTests.m; sourceTree = "<group>"; };
 		3939540E187A193100A19DEC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		39395411187A6AFE00A19DEC /* CYRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRLayoutManager.h; path = ../../CYRTextView/CYRLayoutManager.h; sourceTree = "<group>"; };
-		39395412187A6AFE00A19DEC /* CYRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRLayoutManager.m; path = ../../CYRTextView/CYRLayoutManager.m; sourceTree = "<group>"; };
-		39395413187A6AFE00A19DEC /* CYRTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRTextStorage.h; path = ../../CYRTextView/CYRTextStorage.h; sourceTree = "<group>"; };
-		39395414187A6AFE00A19DEC /* CYRTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRTextStorage.m; path = ../../CYRTextView/CYRTextStorage.m; sourceTree = "<group>"; };
-		39395415187A6AFE00A19DEC /* CYRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRTextView.h; path = ../../CYRTextView/CYRTextView.h; sourceTree = "<group>"; };
-		39395416187A6AFE00A19DEC /* CYRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRTextView.m; path = ../../CYRTextView/CYRTextView.m; sourceTree = "<group>"; };
-		39395417187A6AFE00A19DEC /* CYRToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYRToken.h; path = ../../CYRTextView/CYRToken.h; sourceTree = "<group>"; };
-		39395418187A6AFE00A19DEC /* CYRToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYRToken.m; path = ../../CYRTextView/CYRToken.m; sourceTree = "<group>"; };
+		39395411187A6AFE00A19DEC /* CYRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRLayoutManager.h; sourceTree = "<group>"; };
+		39395412187A6AFE00A19DEC /* CYRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRLayoutManager.m; sourceTree = "<group>"; };
+		39395413187A6AFE00A19DEC /* CYRTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextStorage.h; sourceTree = "<group>"; };
+		39395414187A6AFE00A19DEC /* CYRTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextStorage.m; sourceTree = "<group>"; };
+		39395415187A6AFE00A19DEC /* CYRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextView.h; sourceTree = "<group>"; };
+		39395416187A6AFE00A19DEC /* CYRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextView.m; sourceTree = "<group>"; };
+		39395417187A6AFE00A19DEC /* CYRToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRToken.h; sourceTree = "<group>"; };
+		39395418187A6AFE00A19DEC /* CYRToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRToken.m; sourceTree = "<group>"; };
 		39BE42881880FDA9002BE6FF /* QEDTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QEDTextView.h; sourceTree = "<group>"; };
 		39BE42891880FDA9002BE6FF /* QEDTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QEDTextView.m; sourceTree = "<group>"; };
 		DA0C0E6D1C44214F001EA3FA /* CYRTextViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYRTextViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0C0E6F1C44214F001EA3FA /* CYRTextViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYRTextViewKit.h; sourceTree = "<group>"; };
 		DA0C0E711C44214F001EA3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA0C0E761C44214F001EA3FA /* CYRTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYRTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA0C0E7D1C44214F001EA3FA /* CYRTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYRTextViewTests.swift; sourceTree = "<group>"; };
-		DA0C0E7F1C44214F001EA3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0C0E761C44214F001EA3FA /* CYRTextViewKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYRTextViewKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0C0E7D1C44214F001EA3FA /* CYRTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CYRTextViewTests.swift; path = ../CYRTextViewKitTests/CYRTextViewTests.swift; sourceTree = "<group>"; };
+		DA0C0E7F1C44214F001EA3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../CYRTextViewKitTests/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +167,8 @@
 				39395410187A6AFE00A19DEC /* CYRTextView */,
 				393953DC187A18F300A19DEC /* CYRTextViewExample */,
 				393953FE187A18F300A19DEC /* CYRTextViewExampleTests */,
-				DA0C0E6E1C44214F001EA3FA /* CYRTextView */,
-				DA0C0E7C1C44214F001EA3FA /* CYRTextViewTests */,
+				DA0C0E6E1C44214F001EA3FA /* CYRTextViewKit */,
+				DA0C0E7C1C44214F001EA3FA /* CYRTextViewKitTests */,
 				393953D5187A18F300A19DEC /* Frameworks */,
 				393953D4187A18F300A19DEC /* Products */,
 			);
@@ -180,7 +180,7 @@
 				393953D3187A18F300A19DEC /* CYRTextViewExample.app */,
 				393953F7187A18F300A19DEC /* CYRTextViewExampleTests.xctest */,
 				DA0C0E6D1C44214F001EA3FA /* CYRTextViewKit.framework */,
-				DA0C0E761C44214F001EA3FA /* CYRTextViewTests.xctest */,
+				DA0C0E761C44214F001EA3FA /* CYRTextViewKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 			path = ../CYRTextView;
 			sourceTree = "<group>";
 		};
-		DA0C0E6E1C44214F001EA3FA /* CYRTextView */ = {
+		DA0C0E6E1C44214F001EA3FA /* CYRTextViewKit */ = {
 			isa = PBXGroup;
 			children = (
 				DA0C0E6F1C44214F001EA3FA /* CYRTextViewKit.h */,
@@ -263,15 +263,17 @@
 				39395418187A6AFE00A19DEC /* CYRToken.m */,
 				DA0C0E711C44214F001EA3FA /* Info.plist */,
 			);
-			path = CYRTextView;
+			name = CYRTextViewKit;
+			path = ../CRYTextViewKit;
 			sourceTree = "<group>";
 		};
-		DA0C0E7C1C44214F001EA3FA /* CYRTextViewTests */ = {
+		DA0C0E7C1C44214F001EA3FA /* CYRTextViewKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				DA0C0E7D1C44214F001EA3FA /* CYRTextViewTests.swift */,
 				DA0C0E7F1C44214F001EA3FA /* Info.plist */,
 			);
+			name = CYRTextViewKitTests;
 			path = CYRTextViewTests;
 			sourceTree = "<group>";
 		};
@@ -348,9 +350,9 @@
 			productReference = DA0C0E6D1C44214F001EA3FA /* CYRTextViewKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DA0C0E751C44214F001EA3FA /* CYRTextViewTests */ = {
+		DA0C0E751C44214F001EA3FA /* CYRTextViewKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA0C0E881C44214F001EA3FA /* Build configuration list for PBXNativeTarget "CYRTextViewTests" */;
+			buildConfigurationList = DA0C0E881C44214F001EA3FA /* Build configuration list for PBXNativeTarget "CYRTextViewKitTests" */;
 			buildPhases = (
 				DA0C0E721C44214F001EA3FA /* Sources */,
 				DA0C0E731C44214F001EA3FA /* Frameworks */,
@@ -362,9 +364,9 @@
 				DA0C0E791C44214F001EA3FA /* PBXTargetDependency */,
 				DA0C0E7B1C44214F001EA3FA /* PBXTargetDependency */,
 			);
-			name = CYRTextViewTests;
+			name = CYRTextViewKitTests;
 			productName = CYRTextViewTests;
-			productReference = DA0C0E761C44214F001EA3FA /* CYRTextViewTests.xctest */;
+			productReference = DA0C0E761C44214F001EA3FA /* CYRTextViewKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -405,7 +407,7 @@
 				393953D2187A18F300A19DEC /* CYRTextViewExample */,
 				393953F6187A18F300A19DEC /* CYRTextViewExampleTests */,
 				DA0C0E6C1C44214F001EA3FA /* CYRTextViewKit */,
-				DA0C0E751C44214F001EA3FA /* CYRTextViewTests */,
+				DA0C0E751C44214F001EA3FA /* CYRTextViewKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -688,7 +690,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = CYRTextView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/../CRYTextViewKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -716,7 +718,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = CYRTextView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/../CRYTextViewKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -738,7 +740,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = CYRTextViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dustinpfannenstiel.CYRTextViewTests;
@@ -758,7 +760,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = CYRTextViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dustinpfannenstiel.CYRTextViewTests;
@@ -805,7 +807,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		DA0C0E881C44214F001EA3FA /* Build configuration list for PBXNativeTarget "CYRTextViewTests" */ = {
+		DA0C0E881C44214F001EA3FA /* Build configuration list for PBXNativeTarget "CYRTextViewKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA0C0E891C44214F001EA3FA /* Debug */,

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Cyrillian, Inc. All rights reserved.
 //
 
-#import "CYRTextView.h"
+@import CYRTextViewKit;
 
 @interface QEDTextView : CYRTextView
 

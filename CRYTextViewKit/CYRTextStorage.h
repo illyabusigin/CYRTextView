@@ -1,5 +1,5 @@
 //
-//  CYRTextAttribute.m
+//  CYRTextStorage.h
 //
 //  Version 0.4.0
 //
@@ -32,19 +32,16 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "CYRToken.h"
+#import <UIKit/UIKit.h>
 
-@implementation CYRToken
+@class CYRToken;
 
-+ (instancetype)tokenWithName:(NSString *)name expression:(NSString *)expression attributes:(NSDictionary *)attributes
-{
-    CYRToken *textAttribute = [CYRToken new];
-    
-    textAttribute.name = name;
-    textAttribute.expression = expression;
-    textAttribute.attributes = attributes;
-    
-    return textAttribute;
-}
+@interface CYRTextStorage : NSTextStorage
+
+@property (nonatomic, strong) NSArray <CYRToken *> *tokens;
+@property (nonatomic, strong) UIFont *defaultFont;
+@property (nonatomic, strong) UIColor *defaultTextColor;
+
+- (void)update;
 
 @end
